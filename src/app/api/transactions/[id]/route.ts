@@ -3,15 +3,12 @@ import Transaction from "@/lib/models/transaction";
 import { NextResponse } from "next/server";
 
 // PUT /api/transactions/:id – update a transaction by ID
-export async function PUT(
-  req: Request,
-  { params }: { params: { id: string } }
-) {
+export async function PUT(req: Request, context: { params: { id: string } }) {
   await connectDB();
   const data = await req.json();
 
   const updatedTransaction = await Transaction.findByIdAndUpdate(
-    params.id,
+    context.params.id,
     data,
     { new: true } // return the updated document
   );
@@ -22,10 +19,10 @@ export async function PUT(
 // DELETE /api/transactions/:id – delete a transaction by ID
 export async function DELETE(
   req: Request,
-  { params }: { params: { id: string } }
+  context: { params: { id: string } }
 ) {
   await connectDB();
-  await Transaction.findByIdAndDelete(params.id);
+  await Transaction.findByIdAndDelete(context.params.id);
 
   return NextResponse.json({ message: "Transaction deleted" });
 }
