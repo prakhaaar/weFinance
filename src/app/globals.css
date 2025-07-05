@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+body {
+  @apply bg-[#f9f4ff] text-gray-800 font-sans;
+}
+h1,
+h2,
+h3 {
+  @apply font-bold;
+}
