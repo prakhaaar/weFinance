@@ -1,41 +1,25 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# dotenv environment variable files
+.env
+.env.local
+.env.*    # ignore other custom envs
+!.env.example  # allow sharing a template
 
-# testing
-/coverage
+# MongoDB URI safety
+*.env      # (backup safety)
 
-# next.js
-/.next/
-/out/
+# Next.js build output
+.next
+out
 
-# production
-/build
+# Dependencies
+node_modules/
 
-# misc
-.DS_Store
-*.pem
-
-# debug
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# IDE
+.vscode/
+>>>>>>> 410b7a08836f06a917a1490a0e0dc95f55a4bf00
