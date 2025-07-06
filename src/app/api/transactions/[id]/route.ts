@@ -2,18 +2,14 @@ import { connectDB } from "@/lib/db";
 import Transaction from "@/lib/models/transaction";
 import { NextResponse } from "next/server";
 
-interface Params {
-  id: string;
-}
-
 // PUT /api/transactions/:id — update
-export async function PUT(req: Request, { params }: { params: Params }) {
+export async function PUT(req: Request, context: { params: { id: string } }) {
   try {
     await connectDB();
     const data = await req.json();
 
     const updatedTransaction = await Transaction.findByIdAndUpdate(
-      params.id,
+      context.params.id,
       data,
       { new: true }
     );
@@ -36,11 +32,16 @@ export async function PUT(req: Request, { params }: { params: Params }) {
 }
 
 // DELETE /api/transactions/:id — delete
-export async function DELETE(req: Request, { params }: { params: Params }) {
+export async function DELETE(
+  req: Request,
+  context: { params: { id: string } }
+) {
   try {
     await connectDB();
 
-    const deletedTransaction = await Transaction.findByIdAndDelete(params.id);
+    const deletedTransaction = await Transaction.findByIdAndDelete(
+      context.params.id
+    );
 
     if (!deletedTransaction) {
       return NextResponse.json(
