@@ -3,7 +3,7 @@ import Transaction from "@/lib/models/transaction";
 import { NextResponse } from "next/server";
 
 // PUT /api/transactions/:id — update
-export async function PUT(req: Request, context: { params: { id: string } }) {
+export async function PUT(req: Request, context: any) {
   try {
     await connectDB();
     const data = await req.json();
@@ -32,10 +32,7 @@ export async function PUT(req: Request, context: { params: { id: string } }) {
 }
 
 // DELETE /api/transactions/:id — delete
-export async function DELETE(
-  req: Request,
-  context: { params: { id: string } }
-) {
+export async function DELETE(req: Request, context: any) {
   try {
     await connectDB();
 
