@@ -46,7 +46,7 @@
 
 ## 📸 Screenshots
 
-> _Add screenshots of the dashboard, charts, and budget forms here if available._
+
 
 ---
 
@@ -73,11 +73,6 @@ models/
 transaction.ts
 budget.ts
 
-yaml
-Copy
-Edit
-
----
 
 ## ⚙️ Setup Instructions
 
@@ -87,21 +82,13 @@ Edit
 git clone https://github.com/prakhaaar/weFinance.git
 cd weFinance
 2. Install dependencies
-bash
-Copy
-Edit
 npm install
 3. Create .env.local
 env
-Copy
-Edit
 MONGODB_URI=your-mongodb-connection-string
 Make sure .env.local is listed in .gitignore
 
 4. Run locally
-bash
-Copy
-Edit
 npm run dev
 App will be live at: http://localhost:3000
 
