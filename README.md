@@ -5,7 +5,7 @@ A sleek, full-stack web app that helps you track expenses, set budgets, and visu
 
 🌐 Live Demo
 
-👉 Check it out on Vercel
+👉 Check it out on Vercel(https://we-finance-bay.vercel.app/)
 
 🛠️ Tech Stack
 
