@@ -1,108 +1,84 @@
-# 💰 weFinance – Personal Finance Visualizer
+💰 weFinance – Personal Finance Visualizer
 
-**weFinance** is a full-stack web app that helps users **track expenses, set monthly budgets**, and **visualize spending habits** with beautiful, interactive charts. Built using **Next.js**, **MongoDB**, **Tailwind CSS**, **shadcn/ui**, and **Recharts**.
+Welcome to weFinance! 🚀
+A sleek, full-stack web app that helps you track expenses, set budgets, and visualize your spending habits with interactive, beautiful charts. Built with Next.js, MongoDB, Tailwind CSS, shadcn/ui, and Recharts, it’s designed to make managing your money simple, fun, and visual. 📊✨
 
----
+🌐 Live Demo
 
-## 🚀 Live Demo
+👉 Check it out on Vercel
 
-👉 [View on Vercel](https://we-finance-bay.vercel.app/)
+🛠️ Tech Stack
 
----
+Frontend: Next.js 14 (App Router), React, Tailwind CSS, shadcn/ui
 
-## 🛠 Tech Stack
+Backend: API Routes (Next.js), MongoDB, Mongoose
 
-- **Frontend**: Next.js 14 (App Router), React, Tailwind CSS, shadcn/ui
-- **Backend**: API Routes (Next.js), MongoDB, Mongoose
-- **Charts**: Recharts
-- **UI Components**: shadcn/ui, Tailwind
-- **Notifications**: Sonner
-- **Deployment**: Vercel
+Charts: Recharts
 
----
+UI Components: shadcn/ui, Tailwind
 
-## ✨ Features
+Notifications: Sonner
 
-### ✅ Stage 1: Transaction Tracking
+Deployment: Vercel
 
-- Add/Edit/Delete transactions
-- View transaction list with amount, date, and category
-- Monthly bar chart to track expenses
-- Basic form validation & error states
+✨ Features
+Stage 1: Transaction Tracking 💸
 
-### ✅ Stage 2: Categories
+Add, edit, and delete transactions effortlessly
 
-- Predefined categories (Food, Rent, Utilities, etc.)
-- Pie chart showing category-wise expense breakdown
-- Dashboard cards for total spend and recent history
+View all transactions with amount, date, and category
 
-### ✅ Stage 3: Budgeting
+Monthly bar chart to visualize spending trends
 
-- Set monthly budgets per category
-- Compare actual spend vs budget with bar charts
-- Smart insights on overspending
+Built-in form validation and error handling
 
----
+Stage 2: Categories 📂
 
-## 📸 Screenshots
+Predefined categories (Food, Rent, Utilities…)
 
+Interactive pie chart showing category-wise breakdown
 
+Dashboard cards for total spend and recent activity
 
----
+Stage 3: Budgeting 💡
 
-## 📂 Folder Structure
+Set monthly budgets per category
 
 app/
 api/
-transactions/
-budgets/
+  transactions/
+  budgets/
 page.tsx
 
 components/
-TransactionForm.tsx
-TransactionList.tsx
-CategoryPieChart.tsx
-BudgetForm.tsx
-BudgetVsActualChart.tsx
-SpendingInsights.tsx
-SummaryCards.tsx
+  TransactionForm.tsx
+  TransactionList.tsx
+  CategoryPieChart.tsx
+  BudgetForm.tsx
+  BudgetVsActualChart.tsx
+  SpendingInsights.tsx
+  SummaryCards.tsx
 
 lib/
-db.ts # DB connection
+  db.ts        # Database connection
 models/
-transaction.ts
-budget.ts
+  transaction.ts
+  budget.ts
 
+Future Enhancements
 
-## ⚙️ Setup Instructions
+Export transaction data as CSV
 
-### 1. Clone the repo
+Support for recurring transactions
 
-```bash
-git clone https://github.com/prakhaaar/weFinance.git
-cd weFinance
-2. Install dependencies
-npm install
-3. Create .env.local
-env
-MONGODB_URI=your-mongodb-connection-string
-Make sure .env.local is listed in .gitignore
+Dark/Light theme toggle
 
-4. Run locally
-npm run dev
-App will be live at: http://localhost:3000
+Multi-month analytics and insights
 
-🔍 Future Enhancements
-Export data as CSV
-
-Recurring transaction support
-
-Theme switcher (dark/light mode)
-
-Multi-month analytics
 
 👨‍💻 Author
-Prakhar Mishra
+
+Made with ❤️ by Prakhar Mishra
 
 GitHub: @prakhaaar
 
@@ -111,8 +87,9 @@ LinkedIn: Prakhar Mishra
 Email: mprakhar07@gmail.com
 
 📜 License
-MIT License — free to use, modify, and distribute.
 
-🏁 Submission Stage
-✅ Stage 3 (Final) – All features implemented, live, and production-ready.
-```
+MIT License – free to use, modify, and distribute.
+
+Compare actual spending vs budget with bar charts
+
+Smart insights to help you avoid overspending
